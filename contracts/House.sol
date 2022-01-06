@@ -15,8 +15,8 @@ contract House is Ownable {
     }
 
     // lets have 8x8 grids first
-    uint256 gridLength;
-    uint256 gridWidth; // % 8 to get offset
+    uint256 public gridLength;
+    uint256 public gridWidth; // % 8 to get offset
     mapping(uint256 => uint256) public roomLocation; //mapping to tell where are the rooms on the grids
     mapping(uint256 => uint256) private habitantsToRooms; //mapping to tell which room is particular inhabitant at
 
